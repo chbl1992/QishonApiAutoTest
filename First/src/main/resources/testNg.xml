@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="接口自动化测试">
+    <test name="接口自动化测试">
+        <classes>
+            //登陆
+            <class name="com.qishon.test.LoginTest">
+                <methods>
+                    <include name="beforeTest_url"/>
+                    <include name="getToken"/>
+                    <include name="gs_sys_shopLogin"/>
+                    <include name="alter_PWD"/>
+                </methods>
+            </class>
+            //获取运营分类
+            <class name="com.qishon.test.Mat_mdl_getNavClassList">
+                <methods>
+                    <include name="Mat_mdl_getNavClassListTest"/>
+                </methods>
+            </class>
+            //获取门店的导购员信息
+            <class name="com.qishon.test.Gs_sys_getPersonInfoByJob">
+                <methods>
+                    <include name="Gs_sys_getPersonInfoByJobTest"/>
+                </methods>
+            </class>
+            //设备注册
+            <class name="com.qishon.test.Gs_sys_regDeviceInf">
+                <methods>
+                    <include name="Gs_sys_regDeviceInfTest"/>
+                </methods>
+            </class>
+            //获取商品墙商品列表
+            <class name="com.qishon.test.Gs_prod_List">
+                <methods>
+                    <include name="Gs_prod_List"/>
+                </methods>
+            </class>
+            //获取商品基本信息
+            <class name="com.qishon.test.Gs_prod_getProdInfo">
+                <methods>
+                    <include name="Gs_prod_getProdInfoTest"/>
+                </methods>
+            </class>
+            //根据款式版型获取默认定制详情
+            <class name="com.qishon.test.Gs_prod_getProdOrdDetail">
+                <methods>
+                    <include name="Gs_prod_getProdOrdDetailTest"/>
+                </methods>
+            </class>
+            //获取商品配件信息
+            <class name="com.qishon.test.Gs_match_getFitProdInfoNew">
+                <methods>
+                    <include name="Gs_match_getFitProdInfoNewTest"/>
+                </methods>
+            </class>
+            //定制渲染接口
+            <class name="com.qishon.test.Gs_match_get3DModelInfoNew">
+                <methods>
+                    <include name="Gs_match_get3DModelInfoNewTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.qishon.utils.ExtentTestNGIReporterListener"></listener>
+    </listeners>
+</suite>
