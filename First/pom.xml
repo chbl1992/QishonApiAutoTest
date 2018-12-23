@@ -92,6 +92,7 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>./testNg.xml</suiteXmlFile>
                     </suiteXmlFiles>
+                    <skipTests>true</skipTests>
                 </configuration>
             </plugin>
         </plugins>
